@@ -1,0 +1,54 @@
+
+:root {
+  --link-color: #1d4ed8;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  background-color: #e3e3e3;
+  /* font-family: verdana, arial, sans-serif, helvetica; */
+}
+
+.container {
+  width: 810px;
+  max-width: 100%;
+  margin: 0 auto 10px;
+}
+
+main {
+  background-color: white;
+  padding: 1rem;
+  min-height: 300px;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+footer li {
+  padding: 0.1rem;
+}
+
+a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+label, textarea, input {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}

@@ -1,0 +1,23 @@
+.card {
+    background-color: #f1f1f1;
+    padding: 0;
+    width: 150px;
+  }
+  
+  .card h3 {
+    margin-top: 0;
+    margin-bottom: 16px;
+    color: var(--link-color);
+    font-weight: bold;
+  }
+
+  .cardImage {
+    width: 150px;
+    height: 120px;
+    object-fit: cover;
+    margin-bottom: 0.5rem;
+  }
+
+  .cardContent {
+    padding: 0 0.5rem;
+  }
