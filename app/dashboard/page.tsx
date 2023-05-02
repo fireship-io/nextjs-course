@@ -11,7 +11,6 @@ export default async function Dashboard() {
 
   if (!session) {
     redirect('/api/auth/signin');
-    // return <p>You must be signed in...</p>
   }
 
   const currentUserEmail = session?.user?.email!;
@@ -25,7 +24,7 @@ export default async function Dashboard() {
     <>
       <h1>Dashboard</h1>
       <SignOutButton />
-      <ProfileForm user={user} />;
+      <ProfileForm user={user} />
     </>
   );
 }

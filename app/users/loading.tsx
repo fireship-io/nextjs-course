@@ -1,3 +1,3 @@
-export default async function LoadingUsers() {
+export default function LoadingUsers() {
   return <div>Loading user data...</div>;
 }
