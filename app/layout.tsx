@@ -17,43 +17,42 @@ interface Props {
 
 export default function RootLayout({ children }: Props) {
   return (
-    <AuthProvider>
-      <html lang="en">
-        <body className={myFont.className}>
-          <div className="container">
+    <html lang="en">
+      <body className={myFont.className}>
+        <div className="container">
+          <AuthProvider>
             <NavMenu />
             <main>{children}</main>
-
-            <footer>
-              <p>
-                Created for the{' '}
-                <Link href="https://fireship.io">
-                  Fireship Next.js 13 Full Course
+          </AuthProvider>
+          <footer>
+            <p>
+              Created for the{' '}
+              <Link href="https://fireship.io">
+                Fireship Next.js 13 Full Course
+              </Link>
+            </p>
+            <ul>
+              <li>
+                <Link href={'/about'}>About</Link>
+              </li>{' '}
+              |
+              <li>
+                <Link href={'https://www.youtube.com/@Fireship'}>
+                  YouTube
                 </Link>
-              </p>
-              <ul>
-                <li>
-                  <Link href={'/about'}>About</Link>
-                </li>{' '}
-                |
-                <li>
-                  <Link href={'https://www.youtube.com/@Fireship'}>
-                    YouTube
-                  </Link>
-                </li>{' '}
-                |
-                <li>
-                  <Link href={'/login'}>Source Code</Link>
-                </li>{' '}
-                |
-                <li>
-                  <Link href={'https://nextjs.org'}>NextJS Docs</Link>
-                </li>
-              </ul>
-            </footer>
-          </div>
-        </body>
-      </html>
-    </AuthProvider>
+              </li>{' '}
+              |
+              <li>
+                <Link href={'/login'}>Source Code</Link>
+              </li>{' '}
+              |
+              <li>
+                <Link href={'https://nextjs.org'}>NextJS Docs</Link>
+              </li>
+            </ul>
+          </footer>
+        </div>
+      </body>
+    </html>
   );
 }
