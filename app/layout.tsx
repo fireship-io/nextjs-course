@@ -1,8 +1,7 @@
-import NavMenu from '@/app/NavMenu';
-import './globals.css';
+import AuthProvider from '@/components/AuthProvider';
+import NavMenu from '@/components/NavMenu';
 import { Overpass } from 'next/font/google';
-import Link from 'next/link';
-import AuthProvider from './AuthProvider';
+import './globals.css';
 
 const myFont = Overpass({ subsets: ['latin'] });
 
@@ -23,18 +22,6 @@ export default function RootLayout({ children }: Props) {
           <div className="container">
             <NavMenu />
             <main>{children}</main>
-
-            <footer>
-              <ul>
-                <li>
-                  <Link href={'/about'}>About</Link>
-                </li>
-                |
-                <li>
-                  <Link href={'/login'}>Source Code</Link>
-                </li>
-              </ul>
-            </footer>
           </div>
         </body>
       </html>

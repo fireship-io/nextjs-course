@@ -1,10 +1,9 @@
-import { getServerSession } from 'next-auth';
+import { authOptions } from "@/app/api/auth/[...nextauth]/route";
+import ProfileForm from '@/components/ProfileForm';
+import SignOutButton from '@/components/SignOutButton';
 import { prisma } from '@/lib/prisma';
-import { ProfileForm } from './ProfileForm';
+import { getServerSession } from 'next-auth';
 import { redirect } from 'next/navigation';
-import { SignOutButton } from '@/components/buttons';
-import { authOptions } from "../api/auth/[...nextauth]/route"
-
 
 export default async function Dashboard() {
   const session = await getServerSession(authOptions);

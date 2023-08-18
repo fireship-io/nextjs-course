@@ -1,11 +1,11 @@
 'use client';
 
-export function ProfileForm({ user }: any) {
+export default function ProfileForm({ user }: any) {
 
   const updateUser = async (e: React.FormEvent<HTMLFormElement>) => {
-    
+
     e.preventDefault();
-    
+
     const formData = new FormData(e.currentTarget);
 
     const body = {
@@ -22,7 +22,7 @@ export function ProfileForm({ user }: any) {
         'Content-Type': 'application/json',
       },
     });
-    
+
     await res.json();
   };
 

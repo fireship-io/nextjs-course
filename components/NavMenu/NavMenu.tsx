@@ -1,6 +1,7 @@
-import AuthCheck from '@/components/AuthCheck';
+import AuthCheck from '@/components/AuthCheck/AuthCheck';
 import Link from 'next/link';
-import { SignInButton, SignOutButton } from '../components/buttons';
+import SignInButton from '../SignInButton';
+import SignOutButton from '../SignOutButton';
 import styles from './NavMenu.module.css';
 
 export default function NavMenu() {
@@ -16,15 +17,6 @@ export default function NavMenu() {
         ble
       </Link>
       <ul className={styles.links}>
-        <li>
-          <Link href={'/about'}>About</Link>
-        </li>
-        <li>
-          <Link href={'/blog'}>Blog</Link>
-        </li>
-        <li>
-          <Link href={'/users'}>Users</Link>
-        </li>
         <li>
           <SignInButton />
         </li>
