@@ -7,13 +7,14 @@ import AuthCheck from '@/components/AuthCheck';
 export default function NavMenu() {
   return (
     <nav className={styles.nav}>
-      <Link href={'/'}>
-        <Image
-          src="/logo.svg" // Route of the image file
-          width={216}
-          height={30}
-          alt="NextSpace Logo"
+      <Link className={styles.logoText} href={'/'}>
+        gl
+        <img
+          className={styles.logoImage}
+          src="/icon.svg"
+          alt="globle logo"
         />
+        ble
       </Link>
       <ul className={styles.links}>
         <li>
@@ -30,7 +31,7 @@ export default function NavMenu() {
         </li>
 
         <li>
-        <AuthCheck>
+          <AuthCheck>
             <SignOutButton />
           </AuthCheck>
         </li>
