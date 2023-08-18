@@ -3,8 +3,8 @@ import { Metadata } from 'next';
 export const dynamic = 'force-static'; // no necessary, just for demonstration
 
 export const metadata: Metadata = {
-  title: 'About Us',
-  description: 'About NextSpace',
+  title: 'About',
+  description: 'About globle',
 };
 
 export default function Blog() {

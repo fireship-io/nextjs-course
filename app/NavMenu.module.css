@@ -8,14 +8,17 @@
 }
 
 .logoText {
-  font-size: 16px;
+  color: black;
+  font-size: 2.5rem;
   display: inline-flex;
   align-items: center;
   vertical-align: middle;
+  text-decoration: none;
+  padding-left: 1rem;
 }
 
 .logoImage {
-  height: 1em;
+  height: 0.6em;
   width: auto;
   vertical-align: middle;
 }
