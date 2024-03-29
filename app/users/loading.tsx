@@ -1,3 +1,3 @@
 export default function LoadingUsers() {
-  return <div>Loading user data...</div>;
+  return <p>Loading user data...</p>;
 }

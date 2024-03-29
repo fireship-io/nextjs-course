@@ -8,6 +8,7 @@ body {
   max-width: 100vw;
   overflow-x: hidden;
   background-color: #e3e3e3;
+  color: black
   /* font-family: verdana, arial, sans-serif, helvetica; */
 }
 
@@ -38,7 +39,7 @@ footer li {
 }
 
 a {
-  color: inherit;
+  color: var(--link-color);
   text-decoration: underline;
 }
 
@@ -51,4 +52,8 @@ label, textarea, input {
   html {
     color-scheme: dark;
   }
+}
+
+p, h1, h2, h3, h4, h5, h6, label {
+  color: black;
 }

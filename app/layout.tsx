@@ -28,7 +28,7 @@ export default function RootLayout({ children }: Props) {
               <p>
                 Created for the{' '}
                 <Link href="https://fireship.io">
-                  Fireship Next.js 13 Full Course
+                  Fireship Next.js 14 Full Course
                 </Link>
               </p>
               <ul>
